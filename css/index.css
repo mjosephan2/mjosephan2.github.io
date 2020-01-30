@@ -1,0 +1,284 @@
+/* Simple CSS reset and global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #eee;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #0E0F34;
+}
+
+section{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+a{
+    text-decoration: none;
+    color: #eee
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 0.025rem;
+}
+
+img{
+    width: 100%;
+}
+
+.pic-white{
+    filter:  brightness(0) invert(1);
+}
+
+/* Reusable */
+.container{
+    width: 90%;
+    max-width: 120rem;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.margin-right{
+    margin-right: 5rem;
+}
+/* Header */
+.top-nav{
+    width: 100%;
+    position: fixed;
+    height: auto;
+    background: #0E0F34;
+    z-index: 100;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list li{
+    margin: .5rem 2rem;
+}
+
+.nav-link{
+    padding: 1rem;
+    font-family: 'Indie Flower';
+    font-size: 1.5rem;
+}
+
+.nav-link:hover,
+.nav-link:focus{
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: white solid 3px;
+}
+
+/* Top */
+.top{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.landing-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+}
+
+.landing-text h1{
+    font-size: 5rem;
+    font-family: 'Gloria Hallelujah', cursive;
+    background: linear-gradient(to top, #ffe838, #fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+.landing-text .tag{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+
+.landing-text h6{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 1rem;
+    margin: 0 .5rem;
+    border-left: orange solid 4px;
+    user-select: none;
+}
+
+.landing-text h6:hover,
+.landing-text h6:focus{
+    font-size: 1.8rem;
+    color:red;
+    border-color: red;
+}
+
+/* about */
+.about{
+    height: 80%;
+}
+.about .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 2rem;
+    box-shadow: rgb(0, 0,0);
+}
+
+.profile-img{
+    border: 5px solid white;
+    border-radius: 50%;
+    flex: 1;
+    margin-right: 5rem;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.about-details{
+    flex:1;
+}
+
+.about-details h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+    margin-bottom: 1rem;
+    justify-content: left;
+}
+
+.social{
+    height: 5rem;
+    margin-top: 2rem;
+}
+
+.social i{
+    font-size:3rem;
+}
+
+.fa-facebook-square:hover{
+    color: #3B5998;
+}
+
+.fa-instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-github-square:hover{
+    color: 	#B0B0B0;
+}
+
+
+/* Project */
+.project{
+    width:100%;
+}
+.project .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 70%;
+}
+
+.project .section-heading{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.section-heading h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, .6);
+    text-align: left;
+}
+
+.project .project-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.project-item .project-img{
+    margin: 0 3rem;
+    flex: 1;
+}
+.project-item .project-desc{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-desc h1{
+    color: rgb(255, 166, 0);
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.project-desc a{
+    padding: .8rem 1rem;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.project-desc-button{
+    margin-top: 2rem;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    padding: 1rem;
+    border-top: .5px solid rgba(255, 255, 255, .6);
+    text-align: center;
+}
+
+footer h1{
+    font-size: 1rem;
+}
+/* svg */
+
+
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(255, 255, 255, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+}
+
